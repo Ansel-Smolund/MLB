@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body id = "main-page">
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <div  id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class = "nav-item active"><a class="nav-link" href="#" id = "home" onclick="fillTeamName(this)"><img height = "30" src = "logos/mlb.png"></a></img></li>
+                <li class = "nav-item"><a class="nav-link" href="#" id = "MIN" onclick="fillTeamName(this)"><img height = "30" src = "logos/Minnesota_Twins.png"></a></img></li>
+                <li class = "nav-item"><a class="nav-link" href="#" id = "CWS" onclick="fillTeamName(this)"><img height = "30" src = "logos/Chicago_White_Sox.png"></a></img></li>
+                <li class = "nav-item"><a class="nav-link" href="#" id = "KC" onclick="fillTeamName(this)"><img height = "30" src = "logos/KansasCity_Royals.png"></a></img></li>
+                <li class = "nav-item"><a class="nav-link" href="#" id = "DET" onclick="fillTeamName(this)"><img  height = "30" src = "logos/Detroit_Tigers.png"></a></img></li>
+                <li class = "nav-item"><a class="nav-link" href="#" id = "CLE" onclick="fillTeamName(this)"><img  height = "30" src = "logos/Cleveland_Indians.png"></a></img></li>               
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+        <div class = "row">
+            <div class = "col-md-4">
+                <h3>Welcome to the <span id = "team-name">MLB </span> page</h3>
+                <p id = "">A navigation bar is a navigation header that is placed at the top of the page.</p>
+                <button onclick = "getTodaysScores()"> Get todays scores! </button> 
+            </div>
+            <div class ="col-md-4" id = "boxScores">
+                <h2>scores</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4">
+                <ul id ="player-list"></ul>
+            </div>
+            <div class="col-8">
+                <h1><span id = "currentPlayer"></span></h1>
+                <p>
+                    <span id = "position"></span><br>
+                    <span id = "weight"></span><br>
+                    <span id = "height"></span><br>
+                    <span id = "college"></span><br>
+                    <span id = "age"></span><br>        
+                </p>           
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

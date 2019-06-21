@@ -1,0 +1,12 @@
+#player-list{
+    font-size: 13px !important;
+    list-style: none;
+    
+}
+#player-list li{
+    padding: 5px;
+}
+#player-list li:hover{
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
